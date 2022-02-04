@@ -1,11 +1,21 @@
-
-body{
-    background-image: url("../images/wallet1.png");
-    background-repeat: no-repeat;
-    background-position: right top;
+body {
+  background-image: url("../images/wallet1.png");
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
+span.capital {
+  float: left;
+  background-color: pink;
+  color: red;
+  font-family: monospace;
+  font-size: 400%;
+}
 
-
-
+hr {
+  height: 10px;
+  margin-left: 0%;
+  margin-right: 35%;
+  background-color: rgb(207, 203, 203);
+}
 
