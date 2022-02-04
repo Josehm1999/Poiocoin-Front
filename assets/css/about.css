@@ -24,9 +24,21 @@ ul li{
 .AboutDesc{
     width: 100%;
     height: auto;
-    border-radius: 100% 100% 40% 40%;
-    -webkit-border-radius: 100% 100% 40% 40%;
-    -moz-border-radius: 100% 100% 40% 40%;
-    -ms-border-radius: 100% 100% 40% 40%;
-    -o-border-radius: 100% 100% 40% 40%;
+    border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
+    -webkit-border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
+    -moz-border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
+    -ms-border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
+    -o-border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
+    background-color: #444445;
 }
+
+
+/* Fuentes de letras externas por cdn */
+
+/* .titles{
+    font-family: 'Echelon', sans-serif;
+}
+
+.colorText{
+    font-family: 'Rosemarine', sans-serif;
+} */
