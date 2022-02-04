@@ -1,3 +1,13 @@
+const headerMenu = document.getElementById("headerMenu");
+
+headerMenu.onclick = () => {
+  if (headerMenu.classList.contains("open")) {
+    headerMenu.classList.remove("open");
+  } else {
+    headerMenu.classList.add("open");
+  }
+};
+
 /*const API = "https://pokeapi.co/api/v2/pokemon?limit=20&offset=00";
 
 const PokemonList = {};
