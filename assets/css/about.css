@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:#f0f8ff;
+}
+body{
+    background-color: #444444;
+}
+.imgLogo{
+    width: 5%;
+}
+ul li{
+    text-decoration: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.linkPage .link{
+    text-decoration: none;
+    padding-left: 2rem;
+}
+
+.AboutDesc{
+    width: 100%;
+    height: auto;
+    border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
+    -webkit-border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
+    -moz-border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
+    -ms-border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
+    -o-border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
+    background-color: #444445;
+}
+
+
+/* Fuentes de letras externas por cdn */
+
+/* .titles{
+    font-family: 'Echelon', sans-serif;
+}
+
+.colorText{
+    font-family: 'Rosemarine', sans-serif;
+} */
