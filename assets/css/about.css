@@ -20,3 +20,13 @@ ul li{
     text-decoration: none;
     padding-left: 2rem;
 }
+
+.AboutDesc{
+    width: 100%;
+    height: auto;
+    border-radius: 100% 100% 40% 40%;
+    -webkit-border-radius: 100% 100% 40% 40%;
+    -moz-border-radius: 100% 100% 40% 40%;
+    -ms-border-radius: 100% 100% 40% 40%;
+    -o-border-radius: 100% 100% 40% 40%;
+}
