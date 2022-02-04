@@ -1,19 +1,26 @@
 *{
     margin: 0;
     padding: 0;
-    color:#f0f8ff;
+    color:#fff;
 }
 body{
     background-color: #444444;
 }
-.imgLogo{
-    width: 5%;
+.navbar{
+    background-color: #101112;
 }
-ul li{
+.imgLogo{
+    width: 50%;
+}
+
+ ul li{
     text-decoration: none;
     display: inline;
     margin: 0;
     padding: 0;
+}
+.linkPage .link:hover{
+    color:#fc5b3f;
 }
 
 .linkPage .link{
