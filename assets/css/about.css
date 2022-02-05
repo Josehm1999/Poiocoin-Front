@@ -1,16 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-    color:#fff;
 }
 body{
-    background-color: #444444;
+    background-color: #222;
+    color:#fff;
 }
 .navbar{
     background-color: #101112;
 }
 .imgLogo{
-    width: 50%;
+    width: 70%;
 }
 
  ul li{
@@ -31,21 +31,8 @@ body{
 .AboutDesc{
     width: 100%;
     height: auto;
-    border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
-    -webkit-border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
-    -moz-border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
-    -ms-border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
-    -o-border-radius: 50% 50% 97% 3% / 50% 50% 50% 50% ;
     background-color: #444445;
 }
-
-
-/* Fuentes de letras externas por cdn */
-
-/* .titles{
-    font-family: 'Echelon', sans-serif;
-}
-
 .colorText{
-    font-family: 'Rosemarine', sans-serif;
-} */
+    color:#fff;
+}
