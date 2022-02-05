@@ -15,31 +15,50 @@
   </head>
   <body>
     <header class="header">
-        <div class="overlay"></div>
-        <nav class="d-flex justify-content-between align-items-center">
+        <div class="overlay has-fade"></div>
+        <nav class="container-lg py-4 px-4 my-0 mx-auto d-flex justify-content-between align-items-center">
             <a href="/" class="header__logo">
                 <img src="assets/images/poiocoin_logo3.png" alt="poiocoin">
             </a>
-            <a id="headerMenu" href="#" class="header__menu hide-for-desktop">
+            <a id="headerMenu" href="#" class="header__toggle hide-for-desktop">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
 
             <div class="header__links hide-for-mobile">
-                <a href="/">Home</a>
-                <a href="/">Carteras</a>
+                <a href="./index.html">Home</a>
+                <a href="./wallet.html">Wallet</a>
                 <a href="./about.html">About</a>
-                <a href="/">Com&oacute; empezar?</a>
-                <a href="/">Por qu&eacute; Poiocoin?</a>
+                <a href="./HowToStart.html">Com&oacute; empezar?</a>
+                <a href="./ventajas.html">Por qu&eacute; Poiocoin?</a>
             </div>
             <a href="#" class="button header__cta hide-for-mobile">Registrate</a>
         </nav>
+
+        <div class="header__menu has-fade">
+            <a href="./index.html">Home</a>
+            <a href="./wallet.html">Wallet</a>
+            <a href="./about.html">About</a>
+            <a href="./HowToStart.html">Com&oacute; empezar?</a>
+            <a href="./ventajas.html">Por qu&eacute; Poiocoin?</a>
+        </div>
     </header>
 
-    <div class="container-fluid position-relative">
-        <div id="characters" class="grid"></div>
-    </div>
+   <section class="hero">
+       <div class="container-xl my-0 mx-auto pt-2">
+        <div class="hero__image ">
+        </div>
+        <div class="hero__text px-4 py-4">
+            <h1>PoioCoin</h1>
+            <p>
+            &Uacute;nase a la criptomoneda de mayor crecimiento en la actualidad.<br>
+            Registrate y empieza hoy mismo.
+            </p>
+            <a href="#" class="button hero__cta">Registrate</a>
+        </div>
+       </div>
+   </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
