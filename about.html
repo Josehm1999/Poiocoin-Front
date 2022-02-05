@@ -10,43 +10,33 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link href="http://fonts.cdnfonts.com/css/echelon" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/rosemarine" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/about.css" />
     <title>About PoioCoin</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <ul>
-        <li>
-          <a class="link-light link" href="./index.html"
-            ><img
-              class="img-fluid imgLogo"
-              src="./assets/images/poicoin.png"
-              alt="Home"
-              srcset=""
-          /></a>
-        </li>
-        <li class="linkPage">
-          <a class="link-light link" href="./wallet.html">Wallets</a>
-        </li>
-        <li class="linkPage">
-          <a class="link-light link" href="./HowToStart.html">¿Como empezar?</a>
-        </li>
-        <li class="linkPage">
-          <a class="link-light link" href="./ventajas.html"
-            >¿Por qué usar PoioCoin?</a
-          >
-        </li>
-      </ul>
-    </nav>
-
-    <h1 class="h1 shadow text-center translate-middle-y titles">
+    <header class="header">
+      <nav class="navbar d-flex justify-content-between align-items-center">
+        <a class="link-light link" href="./index.html"
+          ><img
+            class="img-fluid imgLogo"
+            src="./assets/images/Poiocoin_logo3.png"
+            alt="Home"
+            srcset=""
+        /></a>
+        <div class="header__links p-2">
+            <a class="link-light link" href="./wallet.html">Wallets</a>
+            <a class="link-light link" href="./HowToStart.html">¿Cómo empezar?</a>
+            <a class="link-light link" href="./ventajas.html">¿Por qué usar PoioCoin?</a>
+        </div>
+      </nav>
+    </header>
+    <h1 class="h1 shadow text-center  titles">
       About
     </h1>
     <div class="container-fluid">
       <div class="AboutDesc shadow-lg p-1 m-1">
-        <p class="text-center p-1 colorText">
+        <p class="text-center m-2 p-4 colorText">
           PoioCoin es la moneda con la forma de un pollo que se derivada de la red
           de ethereum, haciendo que esta sea descentranlizada, donde la actual,
           busca brindar gran aporte al mundo del agro y es ahí donde nace la idea
@@ -58,8 +48,9 @@
           cosas fisicas, animate a ser parte del cambio, te ofrecemos privacidad.
         </p>
       </div>
+
       <div class="d-flex flex-row">
-        <div class="AboutDesc shadow-lg p-4 m-1">
+        <div class="shadow-lg p-4">
           <h3 class="h5 text-center translate-middle-y titles">
             UltraVelocidad y bajo costo en tus transacciones
           </h3>
@@ -69,15 +60,28 @@
             independencia de los gobiernos.
           </p>
         </div>
-        <div class="AboutDesc shadow-lg p-1 m-1">
+
+        <div class="shadow-lg p-4 m-1">
           <h3 class="text-center h5 titles">Comunidad PoioCoin</h3>
-          <div class="text-center p-1">
+          <div class="text-center">
             <p class="colorText">
               Con una comunidad consolidada por la creatividad y el objetivo de construir un mundo justo y equitativo, independiente de los gobiernos.
             </p>
             </div>
         </div>
       </div>
-    </div class="container-fluid">
+      <div class="container-fluid d-flex flex-row">
+        <div class="AboutDesc shadow-lg p-1 m-1 ">
+          <h3 class="text-center h5 titles">Developers:</h3>
+          <p class="text-center m-2 p-4 colorText">
+            Puedes consultar la guía de información, donde encontraras videos y demaás herramientas que podras utilizar para la implementación.
+          </p>
+        </div>
+        <div class="AboutDesc shadow-lg p-1 m-1">
+          <h3 class="text-center h5 titles">Vuelvete validador</h3>
+          <p class="text-center m-2 p-4 colorText">
+            Contribuye mediante la colaboración de salvaguardar la infraestucutura descentralidaza que existe en la red. Informate sobre el nodo de validación <a href="/node/es">aquí</a>
+          </p>
+        </div>
   </body>
 </html>
