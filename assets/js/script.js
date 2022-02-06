@@ -1,3 +1,4 @@
+// Burger Menu animation
 const headerMenu = document.getElementById("headerMenu");
 const body = document.querySelector("body");
 const header = document.querySelector(".header");
@@ -22,63 +23,50 @@ headerMenu.onclick = () => {
   }
 };
 
-/*const API = "https://pokeapi.co/api/v2/pokemon?limit=20&offset=00";
+// Crypto API
 
-const PokemonList = {};
+const API =
+  "https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=EYDAuGDgIKjk&timePeriod=24h&tiers=1&orderBy=marketCap&orderDirection=desc&limit=4&offset=0";
 
-let html = "";
+const options = {
+  method: "GET",
+  headers: {
+    "x-rapidapi-host": "coinranking1.p.rapidapi.com",
+    "x-rapidapi-key": "24cbac2ba2msh293824c46e1dd84p1e4affjsna18d0ac8c17e",
+  },
+};
 
 const getAPI = (api) => {
-  return fetch(api)
+  return fetch(api, options)
     .then((response) => response.json())
-    .then((pokemons) => {
-      (html = ""),
-        pokemons.results.forEach((pokemon) => {
-          obtenerPokemon(pokemon);
-        }),
-        pagination(pokemons);
-    })
-    .catch((error) => {
-      console.log("Error with the API");
+    .then((coins) => fillTable(coins.data.coins))
+
+    .catch((err) => {
+      console.error("API error ", err);
     });
 };
 
-const obtenerPokemon = (pokemon) => {
-  let url = pokemon.url;
-  fetch(url)
-    .then((response) => response.json())
-    .then((poke) => {
-      fillData(poke);
-    })
-    .catch((error) => {
-      console.log("Error with the API");
-    });
+const fillTable = (coins) => {
+  let cryptocoins = "";
+  coins.forEach((coin) => {
+    cryptocoins += `<tr>
+                    <td class="text-center"> ${coin.rank} </td>
+                    <td><img src="${coin.iconUrl}"> ${
+      coin.name + " " + coin.symbol
+    } </td>
+    <td class="text-center text-sm-left"> ${coin.price} PEN</td>
+    <td class="text-center text-sm-left"> ${coin.change} % </td>
+    </tr>`;
+  });
+
+  cryptocoins += `<tr>
+                    <td class="text-center">5</td>
+                    <td><img src="./assets/images/poicoin_hero.png" alt="poiocoin"> PoioCoin PIO</td>
+                    <td class="text-center text-sm-left"> 439,08 PEN</td>
+                    <td class="text-center text-sm-left"> 3,30 %</td>
+                    </tr>`;
+
+  document.getElementById("data").innerHTML += cryptocoins;
 };
 
-const pagination = (info) => {
-  let html = "";
-  html += `<li class="page-item ${
-    info.previous == null ? "disabled" : ""
-  }"><a class="page-link" onclick="getAPI('${info.previous}')">Prev</a></li>`;
-
-  html += `<li class="page-item ${
-    info.next == null ? "disabled" : ""
-  }"><a class="page-link" onclick="getAPI('${info.next}')">Next</a></li>`;
-
-  document.getElementById("pagination").innerHTML = html;
-};
-
-const fillData = (data) => {
-  html += `<div class="col">
-        <div class="card h-100 text-white  mb-3">
-        <span class="card-id">#${data.id}</span>
-        <img src="${data.sprites.other.dream_world.front_default}" class="card-img-top" alt="...">
-        <div class="card-body ">
-        <h5 class="card-title text-capitalize">${data.name}</h5>
-        <p class="card-text">Height: ${data.height}\n Weight: ${data.weight}</p>
-        </div>
-        </div>
-        </div>`;
-  document.getElementById("characters").innerHTML = html;
-};
-getAPI(API);*/
+getAPI(API);
