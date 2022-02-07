@@ -1,9 +1,8 @@
-body {
+.wallet {
   background-image: url("../images/wallet1.png");
   background-repeat: no-repeat;
   background-position: right top;
 }
-
 span.capital {
   float: left;
   background-color: pink;
