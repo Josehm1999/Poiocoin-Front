@@ -70,3 +70,55 @@ const fillTable = (coins) => {
 };
 
 getAPI(API);
+
+class Footer extends HTMLElement {
+  constructor() {
+    super();
+
+    let shadow = this.attachShadow({ mode: "open" });
+
+    this.footer = document.createElement("footer");
+    this.footer.classList.add("footer", "px-5", "py-5", "text-center");
+    this.footer.innerHTML = `<a class="footer__logo d-inline-block mb-4 mb-lg-0" href="#">
+             <img src="./assets/images/Poiocoin_logo3.png" alt="poiocoin">
+        </a>
+
+        <div class="footer__social mb-4 mb-lg-0">
+            <a href="#">
+                <img src="./assets/images/icon-facebook.svg" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="./assets/images/icon-twitter.svg" alt="Twitter">
+            </a>
+            <a href="#">
+                <img src="./assets/images/icon-youtube.svg" alt="Youtube">
+            </a>
+            <a href="#">
+                <img src="./assets/images/icon-instagram.svg" alt="Instagram">
+            </a>
+            <a href="#">
+                <img src="./assets/images/icon-pinterest.svg" alt="Pinterest">
+            </a>
+        </div>
+
+        <div class="footer__links col1">
+            <a href="./index.html">Home</a>
+            <a href="./wallet.html">Wallet</a>
+            <a href="./about.html">About</a>
+        </div>
+
+        <div class="footer__links col2">
+            <a href="./HowToStart.html">Com&oacute; empezar?</a>
+            <a href="./whyUse.html">Por qu&eacute; Poiocoin?</a>
+        </div>
+        <div class="footer__cta mb-4 mb-lg-0">
+            <a href="#" class="button">Registrate</a>
+        </div>
+        <div class="footer__copyright">&copy; 2022 Poiocoin. All Rights Reserved.
+        </div>
+`;
+    shadow.appendChild(this.footer);
+  }
+}
+
+customElements.define("app-footer", Footer);
