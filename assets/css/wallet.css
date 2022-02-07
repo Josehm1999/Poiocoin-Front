@@ -1,8 +1,13 @@
-body {
+/* body {
   background-image: url("../images/wallet1.png");
   background-repeat: no-repeat;
   background-position: right top;
-}
+} */
+
+img{
+  display:block;
+  margin:auto;
+  }
 
 span.capital {
   float: left;
