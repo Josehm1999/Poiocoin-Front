@@ -5,7 +5,6 @@ const header = document.querySelector(".header");
 const fadeElems = document.querySelectorAll(".has-fade");
 
 headerMenu.onclick = () => {
-  console.log("Funciona :D");
   if (header.classList.contains("open")) {
     body.classList.remove("noscroll");
     header.classList.remove("open");
@@ -69,4 +68,6 @@ const fillTable = (coins) => {
   document.getElementById("data").innerHTML += cryptocoins;
 };
 
-getAPI(API);
+if (window.location.pathname == "/") {
+  getAPI(API);
+}

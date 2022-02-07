@@ -16,20 +16,34 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar d-flex justify-content-between align-items-center">
-        <a class="link-light link" href="./index.html"
-          ><img
-            class="img-fluid imgLogo"
-            src="./assets/images/Poiocoin_logo3.png"
-            alt="Home"
-            srcset=""
-        /></a>
-        <div class="header__links p-2">
-            <a class="link-light link" href="./wallet.html">Wallets</a>
-            <a class="link-light link" href="./HowToStart.html">¿Cómo empezar?</a>
-            <a class="link-light link" href="./whyUse.html">¿Por qué usar PoioCoin?</a>
+        <div class="overlay has-fade"></div>
+        <nav class="container-lg py-4 px-4 my-0 mx-auto d-flex justify-content-between align-items-center">
+            <a href="/" class="header__logo">
+                <img src="./assets/images/Poiocoin_logo3.png" alt="poiocoin">
+            </a>
+            <a id="headerMenu" href="#" class="header__toggle hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="header__links hide-for-mobile">
+                <a href="./index.html">Inicio</a>
+                <a href="./wallet.html">Cartera</a>
+                <a href="./about.html">Acerca de Poiocoin</a>
+                <a href="./HowToStart.html">Com&oacute; empezar?</a>
+                <a href="./whyUse.html">Por qu&eacute; Poiocoin?</a>
+            </div>
+            <a href="#" class="button header__cta hide-for-mobile">Registrate</a>
+        </nav>
+
+        <div class="header__menu has-fade">
+            <a href="./index.html">Inicio</a>
+            <a href="./wallet.html">Cartera</a>
+            <a href="./about.html">Acerca de Poiocoin</a>
+            <a href="./HowToStart.html">Com&oacute; empezar?</a>
+            <a href="./whyUse.html">Por qu&eacute; Poiocoin?</a>
         </div>
-      </nav>
     </header>
     <h1 class="h1 shadow text-center  titles">
       About
@@ -86,38 +100,45 @@
           </p>
         </div>
       </div>
-        <footer class="footer px-5 py-5  text-center">
-          <a class="footer__logo d-inline-block mb-4 mb-lg-0" href="/"><img src="./assets/images/poiocoin_logo3.png" alt="poiocoin"></a>
-          <div class="footer__social mb-4 mb-lg-0">
-              <a href="#">
-                  <img src="./assets/images/icon-facebook.svg" alt="Facebook">
-              </a>
-              <a href="#">
-                  <img src="./assets/images/icon-twitter.svg" alt="Twitter">
-              </a>
-              <a href="#">
-                  <img src="./assets/images/icon-youtube.svg" alt="Youtube">
-              </a>
-              <a href="#">
-                  <img src="./assets/images/icon-instagram.svg" alt="Instagram">
-              </a>
-              <a href="#">
-                  <img src="./assets/images/icon-pinterest.svg" alt="Pinterest">
-              </a>
-          </div>
-          <div class="footer__links col1">
-              <a href="./index.html">Home</a>
-              <a href="./wallet.html">Wallet</a>
-          </div>
-          <div class="footer__links col2">
-              <a href="./HowToStart.html">Com&oacute; empezar?</a>
-              <a href="./whyUse.html">Por qu&eacute; Poiocoin?</a>
-          </div>
-          <div class="footer__cta mb-4 mb-lg-0">
-              <a href="#" class="button">Registrate</a>
-          </div>
-          <div class="footer__copyright">&copy; 2022 Poiocoin. All Rights Reserved.
-          </div>
-      </footer>
+    </div>
+        <footer class="footer px-5 py-5  ">
+        <a class="footer__logo d-inline-block mb-4 mb-lg-0" href="/">
+             <img src="./assets/images/Poiocoin_logo3.png" alt="poiocoin">
+        </a>
+
+        <div class="footer__social mb-4 mb-lg-0">
+            <a href="#">
+                <img src="./assets/images/icon-facebook.svg" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="./assets/images/icon-twitter.svg" alt="Twitter">
+            </a>
+            <a href="#">
+                <img src="./assets/images/icon-youtube.svg" alt="Youtube">
+            </a>
+            <a href="#">
+                <img src="./assets/images/icon-instagram.svg" alt="Instagram">
+            </a>
+            <a href="#">
+                <img src="./assets/images/icon-pinterest.svg" alt="Pinterest">
+            </a>
+        </div>
+
+        <div class="footer__links col1">
+            <a href="./index.html">Inicio</a>
+            <a href="./wallet.html">Cartera</a>
+            <a href="./about.html">Acerca de Poiocoin</a>
+        </div>
+
+        <div class="footer__links col2">
+            <a href="./HowToStart.html">Com&oacute; empezar?</a>
+            <a href="./whyUse.html">Por qu&eacute; Poiocoin?</a>
+        </div>
+        <div class="footer__cta mb-4 mb-lg-0">
+            <a href="#" class="button">Registrate</a>
+        </div>
+        <div class="footer__copyright">&copy; 2022 Poiocoin. All Rights Reserved.
+        </div>
+    </footer>
   </body>
 </html>
