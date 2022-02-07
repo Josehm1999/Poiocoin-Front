@@ -36,3 +36,9 @@ body{
 .colorText{
     color:#fff;
 }
+.aLink{
+    color:#fff;
+}
+.aLink:hover{
+    color:#fc5b3f;
+}
