@@ -1,7 +1,8 @@
 h5{
-    font-weight: bold;
+    font-weight: 20%;
     color: white;
     font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
 
@@ -12,6 +13,8 @@ h5{
 p {
     color: #b4b4b4;
     text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px ;
 }
 
 .titulo{
@@ -26,4 +29,17 @@ p {
     height: 350px;
     display: block;
     margin: auto;
+}
+
+.divFin{
+    margin-left: 10%; 
+    margin-right: 10%;
+    color: white;
+    background-color: #000000a1;
+ 
+   
+}
+
+.divFinTex{
+    background-color: #19191900;
 }
