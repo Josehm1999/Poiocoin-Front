@@ -22,7 +22,7 @@ headerMenu.onclick = () => {
   }
 };
 
-// Crypto API
+// Crypto Rank API
 
 const API =
   "https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=EYDAuGDgIKjk&timePeriod=24h&tiers=1&orderBy=marketCap&orderDirection=desc&limit=4&offset=0";
@@ -68,6 +68,51 @@ const fillTable = (coins) => {
   document.getElementById("data").innerHTML += cryptocoins;
 };
 
+// Crypto News API
+const newsAPI =
+  "https://seeking-alpha.p.rapidapi.com/news/v2/list?category=market-news%3A%3Acrypto&until=0&since=0&size=4&number=1";
+const newsOpt = {
+  method: "GET",
+  headers: {
+    "x-rapidapi-host": "seeking-alpha.p.rapidapi.com",
+    "x-rapidapi-key": "24cbac2ba2msh293824c46e1dd84p1e4affjsna18d0ac8c17e",
+  },
+};
+
+const getNewsAPI = (nAPI) => {
+  return fetch(nAPI, newsOpt)
+    .then((response) => response.json())
+    .then((news) => {
+      console.log(news.data), fillCards(news.data);
+    })
+    .catch((e) => console.log("News API error", e));
+};
+
+const fillCards = (newsd) => {
+  let cards = "";
+  newsd.forEach((report) => {
+    cards += `<a href="${report.links.canonical}" class="news__item">
+                <div class="card h-100 text-white mb-3" >
+                <img src="${
+                  report.attributes.gettyImageUrl
+                }" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title text-capitalize">${
+                      report.attributes.title
+                    }</h5>
+                    <p class="card-text">${report.attributes.publishOn.slice(
+                      0,
+                      10
+                    )}</p>
+                </div>
+                </div>
+                </a>`;
+  });
+  document.getElementById("cardContainer").innerHTML += cards;
+};
+
 if (window.location.pathname == "/") {
+  getNewsAPI(newsAPI);
   getAPI(API);
 }

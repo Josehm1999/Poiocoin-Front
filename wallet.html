@@ -14,30 +14,44 @@
     <title>Wallet</title>
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
-  <body class="p-3 mb-2 bg-dark text-white">
+  <body >
 
     <header class="header">
-      <nav class="navbar d-flex justify-content-between align-items-center">
-        <a class="link-light link" href="./index.html"
-          ><img
-            class="img-fluid imgLogo"
-            src="./assets/images/Poiocoin_logo3.png"
-            alt="Home"
-            srcset=""
-        /></a>
-        <div class="header__links p-2">
-          <a class="link-light link" href="./index.html">Inicio</a>
-            <a class="link-light link" href="./about.html">Acerca de...</a>
-            <a class="link-light link" href="./HowToStart.html">¿Cómo empezar?</a>
+        <div class="overlay has-fade"></div>
+        <nav class="container-lg py-4 px-4 my-0 mx-auto d-flex justify-content-between align-items-center">
+            <a href="/" class="header__logo">
+                <img src="./assets/images/Poiocoin_logo3.png" alt="poiocoin">
+            </a>
+            <a id="headerMenu" href="#" class="header__toggle hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="header__links hide-for-mobile">
+                <a href="./index.html">Inicio</a>
+                <a href="./wallet.html">Cartera</a>
+                <a href="./about.html">Acerca de Poiocoin</a>
+                <a href="./HowToStart.html">Com&oacute; empezar?</a>
+                <a href="./whyUse.html">Por qu&eacute; Poiocoin?</a>
+            </div>
+            <a href="#" class="button header__cta hide-for-mobile">Registrate</a>
+        </nav>
+
+        <div class="header__menu has-fade">
+            <a href="./index.html">Inicio</a>
+            <a href="./wallet.html">Cartera</a>
+            <a href="./about.html">Acerca de Poiocoin</a>
+            <a href="./HowToStart.html">Com&oacute; empezar?</a>
             <a href="./whyUse.html">Por qu&eacute; Poiocoin?</a>
         </div>
-      </nav>
     </header>
-    
+   <div class="wallet p-3 mb-2  text-white">
+
     <h1 class="display-1 text-center">Monedero digital o wallet</h1>
 
     <img class="img" src="./assets/images/wallet1.png"  alt="">
-    
+
     <p>
       El monedero digital de POIOCION es un software o aplicación donde es posible
       almacenar, enviar y recibir poioiocoins. <br />
@@ -71,7 +85,7 @@
         </tr>
         <tr>
           <th scope="row">2</th>
-          <td>Ledger Nano X: 
+          <td>Ledger Nano X:
             Wallet de origen francés que permite la conexión con dispositivos a través de Bluetooth o USB.</td>
           <td>Klever Os:
             Softwaree que permite su uso a los desarrolladores de todas las plataformas de manera inteligente y segura dentro de sus aplicaciones, nube, servidores, hardware, smartphones, pendrives, dispositivos móviles y wearables.</td>
@@ -129,61 +143,53 @@
       </tbody>
     </table>
 
+   </div>
+    <footer class="footer px-5 py-5  ">
+        <a class="footer__logo d-inline-block mb-4 mb-lg-0" href="/">
+             <img src="./assets/images/Poiocoin_logo3.png" alt="poiocoin">
+        </a>
 
+        <div class="footer__social mb-4 mb-lg-0">
+            <a href="#">
+                <img src="./assets/images/icon-facebook.svg" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="./assets/images/icon-twitter.svg" alt="Twitter">
+            </a>
+            <a href="#">
+                <img src="./assets/images/icon-youtube.svg" alt="Youtube">
+            </a>
+            <a href="#">
+                <img src="./assets/images/icon-instagram.svg" alt="Instagram">
+            </a>
+            <a href="#">
+                <img src="./assets/images/icon-pinterest.svg" alt="Pinterest">
+            </a>
+        </div>
 
+        <div class="footer__links col1">
+            <a href="./index.html">Inicio</a>
+            <a href="./wallet.html">Cartera</a>
+            <a href="./about.html">Acerca de Poiocoin</a>
+        </div>
 
-
-
-
-
-
-
-    <footer class="footer px-5 py-5  text-center">
-      <a class="footer__logo d-inline-block mb-4 mb-lg-0" href="/">
-           <img src="./assets/images/poiocoin_logo3.png" alt="poiocoin">
-      </a>
-
-      <div class="footer__social mb-4 mb-lg-0">
-          <a href="#">
-              <img src="./assets/images/icon-facebook.svg" alt="Facebook">
-          </a>
-          <a href="#">
-              <img src="./assets/images/icon-twitter.svg" alt="Twitter">
-          </a>
-          <a href="#">
-              <img src="./assets/images/icon-youtube.svg" alt="Youtube">
-          </a>
-          <a href="#">
-              <img src="./assets/images/icon-instagram.svg" alt="Instagram">
-          </a>
-          <a href="#">
-              <img src="./assets/images/icon-pinterest.svg" alt="Pinterest">
-          </a>
-      </div>
-
-      <div class="footer__links col1">
-          <a href="./index.html">Home</a>
-          <a href="./wallet.html">Wallet</a>
-          <a href="./about.html">About</a>
-      </div>
-
-      <div class="footer__links col2">
-          <a href="./HowToStart.html">Com&oacute; empezar?</a>
-          <a href="./whyUse.html">Por qu&eacute; Poiocoin?</a>
-      </div>
-      <div class="footer__cta mb-4 mb-lg-0">
-          <a href="#" class="button">Registrate</a>
-      </div>
-      <div class="footer__copyright">&copy; 2022 Poiocoin. All Rights Reserved.
-      </div>
-  </footer>
+        <div class="footer__links col2">
+            <a href="./HowToStart.html">Com&oacute; empezar?</a>
+            <a href="./whyUse.html">Por qu&eacute; Poiocoin?</a>
+        </div>
+        <div class="footer__cta mb-4 mb-lg-0">
+            <a href="#" class="button">Registrate</a>
+        </div>
+        <div class="footer__copyright">&copy; 2022 Poiocoin. All Rights Reserved.
+        </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/js/typed.js"></script>
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/wallet.js"></script>
   </body>
 </html>
