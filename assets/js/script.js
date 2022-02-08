@@ -111,7 +111,7 @@ const fillCards = (newsd) => {
   document.getElementById("cardContainer").innerHTML += cards;
 };
 
-if (window.location.pathname == "/index.html") {
+if (window.location.pathname.startsWith('/index') {
   getNewsAPI(newsAPI);
   getAPI(API);
 }
