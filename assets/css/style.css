@@ -324,6 +324,7 @@ button, .button:hover {
 .footer {
    background-color: var(--main-bg-color);
    color: var(--title-color);
+   text-align: center;
 }
 
 .footer .footer__links a{
@@ -358,6 +359,7 @@ button, .button:hover {
         "logo col1 col2 cta"
         "social col1 col2 copy";
         justify-items: start;
+        text-align: left;
     }
 
     .footer .footer__logo {
@@ -373,7 +375,7 @@ button, .button:hover {
 
     .footer .footer__links {
         font-size: 1.25rem;
-        align-self: center;
+        align-items: inherit;
     }
     .footer .footer__links.col1 {
         grid-area: col1;

@@ -42,3 +42,15 @@ body{
 .aLink:hover{
     color:#fc5b3f;
 }
+.flashPoio{
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.comunityPoio{
+    width: 30%;
+    display: block;
+margin-left: auto;
+margin-right: auto;
+}
