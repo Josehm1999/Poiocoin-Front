@@ -83,7 +83,7 @@ const getNewsAPI = (nAPI) => {
   return fetch(nAPI, newsOpt)
     .then((response) => response.json())
     .then((news) => {
-      console.log(news.data), fillCards(news.data);
+      fillCards(news.data);
     })
     .catch((e) => console.log("News API error", e));
 };
